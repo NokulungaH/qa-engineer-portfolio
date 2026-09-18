@@ -4,8 +4,10 @@ export default defineConfig({
   testDir: './tests',
   testIdAttribute: 'data-test',
   fullyParallel: true,
+  timeout: 15_000,
+  globalTimeout: process.env.CI ? 120_000 : undefined,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 0 : 0,
   workers: process.env.CI ? 2 : undefined,
   reporter: [['html', { open: 'never' }], ['list']],
   use: {
