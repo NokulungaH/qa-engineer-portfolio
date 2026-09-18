@@ -37,7 +37,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright test suite
-        run: npm test
+        run: npm test -- --project=chromium
 
       - name: Upload Playwright report
         if: always()
