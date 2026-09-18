@@ -19,7 +19,7 @@ Playwright · TypeScript · Cucumber/Gherkin · Postman · Swagger · SoapUI · 
 - [x] Phase 1: Portfolio foundation
 - [x] Phase 2: Playwright web automation
 - [x] Phase 3: API automation
-- [ ] Phase 4: Senior QA case studies and testing artefacts
+- [x] Phase 4: Senior QA case studies and testing artefacts
 - [ ] Phase 5: CI/CD and automated reporting
 - [ ] Phase 6: Final polish and live portfolio release
 
