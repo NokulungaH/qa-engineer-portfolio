@@ -17,7 +17,7 @@ Playwright · TypeScript · Cucumber/Gherkin · Postman · Swagger · SoapUI · 
 
 ## Portfolio Roadmap
 - [x] Phase 1: Portfolio foundation
-- [ ] Phase 2: Playwright web automation
+- [x] Phase 2: Playwright web automation
 - [ ] Phase 3: API automation
 - [ ] Phase 4: Senior QA case studies and testing artefacts
 - [ ] Phase 5: CI/CD and automated reporting
