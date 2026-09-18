@@ -3,11 +3,11 @@
 A practical QA engineering portfolio demonstrating senior-level quality engineering across test strategy, web automation, API testing, exploratory testing, defect management and QA process implementation.
 
 ## About Me
-I am a Senior QA Engineer with 10+ years of experience across HR/Payroll, E-Learning and iGaming. My experience spans manual and functional testing, API testing, regression and integration testing, UAT, release testing, SQL and data validation, test automation strategy, defect management and QA leadership.
+I am a Senior QA Engineer with 11+ years of experience across HR/Payroll, E-Learning and iGaming. My experience spans manual and functional testing, API testing, regression and integration testing, UAT, release testing, SQL and data validation, test automation strategy, defect management and QA leadership.
 
 ## Portfolio Projects
 1. **Web Automation Framework**: Playwright + TypeScript end-to-end automation against SauceDemo.
-2. **API Automation Framework**: Service-level automation covering happy paths, negative validation, authentication, data integrity and CRUD-style workflows.
+2. **API Automation Framework**: Playwright + TypeScript tests against public JSONPlaceholder covering CRUD-style responses, negative validation, contracts, filtering and data integrity.
 3. **QA Process Implementation**: An anonymized case study showing how I approach establishing a QA function where no formal QA process exists.
 4. **Exploratory Testing and Defect Analysis**: Exploratory charters, risk-based coverage, defect reports and investigation notes.
 5. **Test Strategy and Release Quality**: Requirement analysis, test planning, risk assessment, traceability, release readiness and QA metrics.
@@ -21,7 +21,7 @@ Playwright · TypeScript · Cucumber/Gherkin · Postman · Swagger · SoapUI · 
 - [x] Phase 3: API automation
 - [x] Phase 4: Senior QA case studies and testing artefacts
 - [x] Phase 5: CI/CD and automated reporting
-- [ ] Phase 6: Final polish and live portfolio release
+- [x] Phase 6: Final polish and live portfolio release
 
 ## Contact
 **Nokulunga Hlongwa**  
