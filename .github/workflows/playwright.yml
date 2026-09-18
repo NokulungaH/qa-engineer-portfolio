@@ -16,41 +16,39 @@ permissions:
 
 jobs:
   test:
-    name: Playwright tests
+    name: Web / ${{ matrix.browser }}
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
     defaults:
       run:
         working-directory: web-automation
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
-
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: 24
-
       - name: Install dependencies
         run: npm install
-
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps
-
-      - name: Run Playwright test suite
-        run: npm test -- --project=chromium
-
-      - name: Upload Playwright report
+      - name: Install ${{ matrix.browser }}
+        run: npx playwright install --with-deps ${{ matrix.browser }}
+      - name: Run ${{ matrix.browser }} suite
+        run: npm test -- --project=${{ matrix.browser }}
+      - name: Upload HTML report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-html-report
+          name: web-report-${{ matrix.browser }}
           path: web-automation/playwright-report/
           retention-days: 14
-
       - name: Upload failure evidence
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-test-results
+          name: web-failure-${{ matrix.browser }}
           path: web-automation/test-results/
           retention-days: 14
