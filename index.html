@@ -31,7 +31,7 @@
     <p class="intro">Senior Software Quality Assurance Engineer with 11+ years of experience across HR/Payroll, E-Learning and iGaming, combining test analysis, automation, API testing and QA process improvement.</p>
     <div class="buttons">
       <a class="button dark" href="#work">Explore my QA work</a>
-      <a class="button light" href="mailto:dudahlongwa@gmail.com">Contact me</a>
+      <button class="button light contact-trigger" type="button" onclick="document.getElementById('contact-dialog').showModal()">Contact me</button>
     </div>
     <div class="stats">
       <div><b>11+</b><small>Years QA</small></div>
@@ -143,6 +143,17 @@
   </div>
 </section>
 </main>
+<dialog id="contact-dialog" class="contact-dialog">
+  <button class="dialog-close" type="button" aria-label="Close contact details" onclick="this.closest('dialog').close()">×</button>
+  <p class="eyebrow">CONTACT</p>
+  <h2>Let's connect.</h2>
+  <p>You can reach me at:</p>
+  <a class="contact-email" href="mailto:dudahlongwa@gmail.com">dudahlongwa@gmail.com</a>
+  <div class="buttons">
+    <a class="button dark" href="mailto:dudahlongwa@gmail.com">Open email app</a>
+    <button class="button light" type="button" onclick="navigator.clipboard.writeText('dudahlongwa@gmail.com').then(() => { this.textContent='Copied ✓'; setTimeout(() => this.textContent='Copy email', 1600); })">Copy email</button>
+  </div>
+</dialog>
 <footer>© 2026 Nokulunga Hlongwa · Senior QA Engineer</footer>
 </body>
 </html>
